@@ -1,0 +1,62 @@
+.back{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 80px;
+    left: 0;
+    width: 100%; height: 100%;
+    background: #303030;
+}
+
+.conta{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 100px;
+}
+
+.input-search{
+    margin-top: 15px;
+    align-items: center;
+    vertical-align: center;
+    height: 50px;
+}
+
+.cent{
+    display: flex;
+}
+
+.search-button{
+    background: #8f4040;
+    border-radius: 30px;
+    color: white;
+
+}
+
+.glass{
+    height: 35px;
+    width: 35px;
+}
+
+.searching_friends {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    top: 100px;
+    height: 500px;
+    border: 2px #000000 solid;
+    background: #211111;
+}
+
+.head {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.friend{
+    background: #fa9d9d;
+    border: 2px solid #ff0000;
+}

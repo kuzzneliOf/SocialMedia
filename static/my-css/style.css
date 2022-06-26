@@ -1,0 +1,310 @@
+.logo{
+    margin: 10px 0 0 10px;
+    width: 157px;
+    height: 77px;
+}
+.main-img{
+    width: 140px;
+    height: 100px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF7971), to(#EEB3B0)) fixed;
+}
+
+.cont{
+    margin-left: 10%;
+}
+
+.my-nav{
+    height: 87px;
+    position: relative;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.al{
+
+    float: left;
+
+    height: 77px;
+    display: table;
+}
+
+.text{
+    vertical-align: middle;
+    font-family: "Georgia";
+    display: table-cell;
+    font-size: 18px;
+}
+.circ{
+    margin-top: 7%;
+    border-radius: 50px;
+    background: #0c63e4;
+    height: 50px;
+    width: 50px;
+}
+
+.header{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.inner{
+    font-size: 24px;
+}
+
+.image-border{
+    width: 500px;
+    padding: 10px;
+    border: 2px white solid;
+}
+
+
+.abs-pos{
+    position: absolute;
+}
+
+.fl-r{
+    float: right;
+}
+
+.books{
+    width: 450px;
+    height: 400px;
+    border: 4px white solid;
+}
+
+.img-1{
+    width: 400px;
+    height: 450px;
+    z-index: 100;
+    margin-left: 50px;
+    margin-top: -90px;
+}
+
+.img-2{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    margin-top: 120px;
+    margin-left: 2px;
+}
+
+
+/* Спілкування */
+.conv {
+    position: absolute;
+    width: 367px;
+    height: 148px;
+    left: 930px;
+    top: 617px;
+}
+
+/* Опублікувати історію */
+.publ-hist {
+
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.publ-hist:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.friends {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #000000;
+
+}
+
+.cloud {
+    width: 400px;
+    height: 400px;
+
+    margin-top: -50px;
+}
+
+.field{
+
+    position: absolute;
+    width: 415px;
+    height: 38px;
+
+    background: #FFFFFF;
+    border-radius: 19px;
+
+}
+
+.button1{
+
+    width: 135px;
+    height: 38px;
+
+    background: #FFFFFF;
+    border-radius: 19px;
+
+}
+.google{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#entry{
+    color: black;
+    text-decoration: none;
+}
+
+#register{
+    color: black;
+    text-decoration: none;
+}
+
+/*body {*/
+/*    align-items: center;*/
+/*    background-color: #000;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    height: 100vh;*/
+/*}*/
+
+.form {
+    background-color: #621919;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 650px;
+    padding: 20px;
+    width: 320px;
+}
+
+.title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.ic1 {
+    margin-top: 40px;
+}
+
+.ic2 {
+    margin-top: 30px;
+}
+
+.input {
+    background-color: #8f4040;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+.form-small{
+    height: 500px;
+}
+.cut {
+    background-color: #621919;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+.cut-middle{
+    width: 65px;
+}
+.cut-short {
+    width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+
+.placeholder1 {
+    color: #0e0e11;
+    font-family: sans-serif;
+    text-decoration: none;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.input:focus ~ .placeholder1,
+.input:not(:placeholder-shown) ~ .placeholder1 {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder1 {
+    color: #808097;
+}
+
+.input:focus ~ .placeholder1 {
+    color: #ff5274;
+}
+
+.submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 20px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.submit:active {
+    background-color: #06b;
+}
+

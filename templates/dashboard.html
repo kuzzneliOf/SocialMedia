@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Author Text
+    </title>
+    <link rel="shortcut icon" href="../static/res/Logo.svg"/>
+    <link rel="stylesheet" href="../static/my-css/style.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/my-css/styles2.css">
+</head>
+<body>
+<div class="cont container">
+
+    <nav class="my-nav row cent">
+
+        <div class="col-2">
+            <a href="#"><img src="../static/res/Logo2.svg" alt="" class="main-img"></a>
+        </div>
+
+        <div class="al col-2">
+            <span class="text">Опублікувати історію</span>
+        </div>
+        <div class="col-1"></div>
+
+        <div class="al col-3 cent">
+            <input class="input input-search" type="text">
+        </div>
+        <div class="al col-2">
+
+            <a href="#" class="text"> <img class="glass" src="../static/res/glass.svg" alt=""/></a>
+        </div>
+
+        <div class="col-2 al">
+            <div class="rounded-circle circ"></div>
+            <a href="{{url_for('logout')}}">Logout: {{username}}</a>
+        </div>
+    </nav>
+
+
+</div>
+
+<div class="back">
+    <div class="conta">
+        <div class="head">
+            <h1>Друзі</h1>
+        </div>
+        <div class="searching_friends">
+            <div style="display: flex; flex-direction: column; width: 100%; justify-content: center;">
+                <form method="post" action="/dashboard">
+                    {% for friend in recommended_users %}
+                    <div class="friend">
+                        {{ friend.username }}
+                        <input type="submit" name="put_{{friend.id}}" value="Додати"/>
+                    </div>
+
+                    {% endfor %}
+                </form>
+            </div>
+        </div>
+        <div class="searching_friends">
+            <form method="post" action="/dashboard">
+                {% for my_friend in users %}
+                <div class="friend">
+                    {{ my_friend.username }}
+                    <input type="submit" name="delete_{{my_friend.id}}" value="Видалити"/>
+                </div>
+
+                {% endfor %}
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

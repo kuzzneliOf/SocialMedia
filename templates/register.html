@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static',filename='my-css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container">
+    <nav class="my-nav row">
+
+        <div class="col-2">
+            <a href="#"><img src="../static/res/Logo2.svg"></a>
+        </div>
+
+        <div class="al col-2">
+
+        </div>
+
+        <div class="al col-3">
+
+        </div>
+
+        <div class="al col-1">
+            <a id="entry" class="text" href="{{ url_for('login') }}">Увійти</a>
+        </div>
+
+        <div class="al col-2">
+
+        </div>
+
+        <div class="col-2 al">
+            <div class="rounded-circle circ"></div>
+        </div>
+    </nav>
+
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+
+
+
+        <div class="row">
+
+            <div class="col-3"></div>
+            <div class="form form-small col-5">
+                <div class="title">Реєстрація</div>
+                <div class="input-container ic1">
+                    {{ form.username }}
+                    <div class="cut cut-short"></div>
+                    <label for="username" class="placeholder1">Логін</label>
+                </div>
+                <div class="input-container ic2">
+                    {{ form.password }}
+                    <div class="cut cut-middle"></div>
+                    <label for="password" class="placeholder1">Пароль</label>
+                </div>
+                <br>
+                        {{ form.submit }}
+                <br>
+                <a href="{{ url_for('login') }}"> Вже маєте аккаунт? </a>
+            </div>
+
+        </div>
+    </form>
+</div>
+</body>
+
+</html>

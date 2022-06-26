@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Author Text
+    </title>
+    <link rel="shortcut icon" href="../static/res/Logo.svg" />
+    <link rel="stylesheet" href="../static/my-css/style.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+</head>
+
+<body>
+<div class="cont container">
+
+    <nav class="my-nav row">
+
+        <div class="col-2" >
+            <a href="#"><img src="../static/res/Logo2.svg" alt=""></a>
+        </div>
+
+        <div class="al col-2">
+
+        </div>
+
+        <div class="al col-3">
+
+        </div>
+
+        <div class="al col-1">
+            <a id="entry" class="text" href="{{ url_for('login') }}">Увійти</a>
+        </div>
+
+        <div class="al col-2">
+            <a id="register" class="text" href="{{ url_for('register') }}">Зареєструватись</a>
+        </div>
+
+        <div class="col-2 al">
+            <div class="rounded-circle circ"></div>
+        </div>
+    </nav>
+    <div class="row">
+
+            <div class="col-6">
+                <div class="text header">
+                    Соціальна мережа для <br>
+                    письменників та читачів! <br>
+                </div>
+                <div style="height: 55px;"></div>
+                <div class="inner">
+                    Публікуй власні статті, покращуй навички,<br>
+                    ставай популярним!<br>
+                    Найкращий підбір статей кожного жанру для <br>
+                    кожного користувача. <br>
+                </div>
+            </div>
+
+        <div class="col-6">
+            <div class="books ">
+                <img src="../static/res/books.png" alt="" class="img-1 abs-pos">
+                <img src="../static/res/magazines.png" alt="" class="img-2 abs-pos">
+            </div>
+        </div>
+
+    </div>
+    <div class="row" style="height: 50px;">
+        <div class="col-12"></div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <img class="cloud" src="../static/res/cloud.svg" alt="">
+        </div>
+
+        <div class="col-6">
+            <div class="friends">
+                Спілкуйся з однодумцями <br>
+                та читачами, діліться думками, <br>
+                та створюйте свої історії! <br>
+            </div>
+            <br>
+            <br>
+            <a href="#" class="publ-hist">
+                Опублікувати історію
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+</body>
+<script src="../js/main.js"></script>
+</html>
